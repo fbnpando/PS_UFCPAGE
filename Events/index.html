@@ -1,0 +1,89 @@
+<html>
+  <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<link rel="stylesheet" href="/Events/styles.css">
+<title>UFC Events - Upcoming Fights and Tickets</title>
+
+</head>
+<body>
+  <header>
+    <div class="logo">UFC Events</div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/events">Events</a></li>
+        <li><a href="#" id="cart-link">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Upcoming UFC Events</h1>
+    <p>Get your tickets for the most anticipated fights of the year!</p>
+    
+    <div class="event-grid">
+      <div class="event-card">
+        <img src="https://www.mixedmartialarts.com/.image/t_share/MTkxMDg0NTcxOTMwOTI4NDk0/ufc-fight-night-208-banner.jpg" alt="UFC 280 promotional poster featuring Charles Oliveira vs Islam Makhachev" class="event-image" width="300" height="200">
+        <div class="event-info">
+          <h2 class="event-title">UFC 280</h2>
+          <p class="event-date">October 22, 2023</p>
+          <p class="event-location">Etihad Arena, Abu Dhabi</p>
+          <p class="event-main-fight">Charles Oliveira vs Islam Makhachev</p>
+          <a href="#" class="cta-button" data-event="UFC 280">Buy Tickets</a>
+        </div>
+      </div>
+      
+      <div class="event-card">
+        <img src="https://th.bing.com/th/id/OIP.d-m51bdE38D6dGbApk1tEwHaEo?rs=1&pid=ImgDetMain" alt="UFC 281 promotional poster featuring Israel Adesanya vs Alex Pereira" class="event-image" width="300" height="200">
+        <div class="event-info">
+          <h2 class="event-title">UFC 281</h2>
+          <p class="event-date">November 12, 2023</p>
+          <p class="event-location">Madison Square Garden, New York</p>
+          <p class="event-main-fight">Israel Adesanya vs Alex Pereira</p>
+          <a href="#" class="cta-button" data-event="UFC 281">Buy Tickets</a>
+        </div>
+      </div>
+      
+      <div class="event-card">
+        <img src="https://th.bing.com/th/id/R.f9cf664d10ca8eda48cb0caf365de670?rik=W1uZUfmpZrXfFA&pid=ImgRaw&r=0" alt="UFC 282 promotional poster featuring Jiří Procházka vs Glover Teixeira" class="event-image" width="300" height="200">
+        <div class="event-info">
+          <h2 class="event-title">UFC 282</h2>
+          <p class="event-date">December 10, 2023</p>
+          <p class="event-location">T-Mobile Arena, Las Vegas</p>
+          <p class="event-main-fight">Jiří Procházka vs Glover Teixeira</p>
+          <a href="#" class="cta-button" data-event="UFC 282">Buy Tickets</a>
+        </div>
+      </div>
+      
+      <div class="event-card">
+        <img src="https://th.bing.com/th/id/R.d303e703de8a38c1e3a7202140fb3fac?rik=R%2fZpQUPJhALvuA&pid=ImgRaw&r=0" alt="UFC 283 promotional poster featuring Deiveson Figueiredo vs Brandon Moreno" class="event-image" width="300" height="200">
+        <div class="event-info">
+          <h2 class="event-title">UFC 283</h2>
+          <p class="event-date">January 21, 2024</p>
+          <p class="event-location">Jeunesse Arena, Rio de Janeiro</p>
+          <p class="event-main-fight">Deiveson Figueiredo vs Brandon Moreno</p>
+          <a href="#" class="cta-button" data-event="UFC 283">Buy Tickets</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 UFC Events. All rights reserved.</p>
+  </footer>
+
+  <!-- Cart Modal -->
+  <div id="cartModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <button id="confirm-purchase" class="confirm-purchase">Confirm Purchase</button>
+    </div>
+  </div>
+  <link href="script.js">
+</body>
+</html>
