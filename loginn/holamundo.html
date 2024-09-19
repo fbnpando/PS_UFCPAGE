@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hola Mundo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>¡Hola Mundo!</h1>
+    <button id="logoutButton">Cerrar Sesión</button>
+  </div>
+
+  <!-- Firebase Configuración -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
+    import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDCXh3ypDLJeskFZQ5PH4RLG_Mnin3a1fg",
+      authDomain: "login-8a142.firebaseapp.com",
+      projectId: "login-8a142",
+      storageBucket: "login-8a142.appspot.com",
+      messagingSenderId: "714021566883",
+      appId: "1:714021566883:web:290d310ade393ad09d8216"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    // Referencia al botón de cerrar sesión
+    const logoutButton = document.getElementById('logoutButton');
+
+    // Función para cerrar sesión
+    logoutButton.addEventListener('click', () => {
+      signOut(auth).then(() => {
+        // Redirige al usuario a la página de inicio de sesión
+        window.location.href = 'index.html';
+      }).catch((error) => {
+        console.error('Error al cerrar sesión:', error);
+      });
+    });
+  </script>
+</body>
+</html>

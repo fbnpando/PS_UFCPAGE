@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login con Firebase</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Iniciar Sesión</h2>
+    <input type="email" id="email" placeholder="Correo electrónico">
+    <input type="password" id="password" placeholder="Contraseña">
+    <button id="loginButton">Iniciar Sesión con Firebase</button>
+    <button id="signupButton">Registrarse con Firebase</button>
+    <hr>
+    <button id="googleSignupButton">
+      <img src="Google__G__logo.svg.png" alt="Google Logo" class="google-logo">
+      Registrarse con Google
+    </button>
+    <p id="message"></p>
+  </div>
+
+  <!-- Firebase Configuración -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>
